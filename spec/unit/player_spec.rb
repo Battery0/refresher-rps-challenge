@@ -21,6 +21,11 @@ describe Player do
       expect(player_one.choice).to eq('paper')
     end
 
+    it 'should return the players choice if scissors' do
+      player_one.choose('scissors')
+      expect(player_one.choice).to eq('scissors')
+    end
+
   end
 
 end
