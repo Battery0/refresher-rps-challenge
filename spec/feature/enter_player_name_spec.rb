@@ -1,4 +1,4 @@
-feature 'A player can see their' do
+feature 'A player can see their name' do
 
   scenario 'by signing up and receiving a welcome message' do
     enter_and_submit_name
