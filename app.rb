@@ -1,5 +1,6 @@
 require 'sinatra'
-require "sinatra/reloader" if development?
+require 'sinatra/reloader' if development?
+require_relative './lib/player'
 
 class RockPaperScissors < Sinatra::Base
   configure :development do
@@ -13,12 +14,12 @@ class RockPaperScissors < Sinatra::Base
   end
 
   post '/player_name' do
-    session[:player_one] = params[:player_name]
+    session[:player_one] = Player.new(params[:player_name])
     redirect to('/rock-paper-scissors')
   end
 
   get '/rock-paper-scissors' do
-    @player_name = session[:player_one]
+    @player_one = session[:player_one]
     erb(:rock_paper_scissors)
   end
 
