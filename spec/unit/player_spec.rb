@@ -10,4 +10,11 @@ describe Player do
     end
   end
 
+  describe '#choice' do
+    it 'should return the players choice if rock' do
+      player_one.choose('rock')
+      expect(player_one.choice).to eq('rock')
+    end
+  end
+
 end
