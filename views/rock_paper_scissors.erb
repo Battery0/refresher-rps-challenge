@@ -5,5 +5,22 @@
   </head>
   <body>
     <h2>Welcome <%= @player_name %></h2>
+    <br>
+    <h3>Please select a move</h3>
+    <br>
+    <form action="/player_move" method="post">
+      <input id="rock" type="radio" name="player_move" value="Rock">
+      <label for="rock">Rock</label>
+
+      <input id="paper" type="radio" name="player_move" value="Paper">
+      <label for="rock">Paper</label>
+
+      <input id="scissors" type="radio" name="player_move" value="Scissors">
+      <label for="rock">Scissors</label>
+
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>

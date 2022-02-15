@@ -22,4 +22,14 @@ class RockPaperScissors < Sinatra::Base
     erb(:rock_paper_scissors)
   end
 
+  post '/player_move' do
+    session[:player_move] = params[:player_move]
+    redirect to('/game')
+  end
+
+  get '/game' do
+    @player_move = session[:player_move] 
+    erb(:game)
+  end
+
 end
