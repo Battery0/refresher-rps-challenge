@@ -24,10 +24,10 @@ class RockPaperScissors < Sinatra::Base
 
   post '/player_move' do
     session[:player_move] = params[:player_move]
-    redirect to('/game')
+    redirect to('/result')
   end
 
-  get '/game' do
+  get '/result' do
     @player_move = session[:player_move] 
     erb(:game)
   end
