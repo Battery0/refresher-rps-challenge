@@ -33,6 +33,7 @@ class RockPaperScissors < Sinatra::Base
   get '/result' do
     @computer = session[:game].computer
     @player_one = session[:game].player1
+    @result = session[:game].result
     erb(:game)
   end
 

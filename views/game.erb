@@ -8,5 +8,16 @@
     <div id="computer_choice">
       <h3>The Computer picked <%= @computer.move %></h3>
     </div>
+    <br>
+    <br>
+    <div id="game-result">
+      <% if @result == "win" %>
+        <h2>Congratulations, you win!!</h2>
+      <% elsif @result == "draw" %>
+        <h2>It's a draw! Maybe next time...</h2>
+      <% else %>
+        <h2>You lose</h2>
+      <% end %>
+    </div>
   </body>
 </html>

@@ -1,15 +1,23 @@
 class Computer
 
+  def initialize
+    @choice = nil
+  end
+
   def move
     random_number = random_number_generator
     case random_number 
       when 1
-        "Rock"
+        @choice = "Rock"
       when 2
-        "Paper"
+        @choice = "Paper"
       when 3
-        "Scissors"
+        @choice = "Scissors"
     end
+  end
+
+  def choice
+    @choice
   end
 
   private
