@@ -20,4 +20,8 @@ class Game
     @player_one.choice
   end
 
+  def computer_choice
+    @computer_player.move
+  end
+
 end
