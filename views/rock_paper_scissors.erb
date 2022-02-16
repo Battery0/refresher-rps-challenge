@@ -2,24 +2,29 @@
 <html>
   <head>
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./stylesheet/styles.css">
   </head>
   <body>
     <h2>Welcome <%= @game.player1.name %></h2>
     <br>
     <h3>Please select a move</h3>
     <br>
-    <form action="/player_move" method="post">
-      <input id="rock" type="radio" name="player_move" value="Rock">
-      <label for="rock">Rock</label>
-      <br>
-      <input id="paper" type="radio" name="player_move" value="Paper">
-      <label for="paper">Paper</label>
-      <br>
-      <input id="scissors" type="radio" name="player_move" value="Scissors">
-      <label for="scissors">Scissors</label>
-      <br>
-      <br>
-      <button type="submit">Submit</button>
+    <div id="container">
+      <div id="form">
+        <form action="/player_move" method="post">
+          <input id="rock" type="radio" name="player_move" value="Rock">
+          <label for="rock">Rock</label>
+          <br>
+          <input id="paper" type="radio" name="player_move" value="Paper">
+          <label for="paper">Paper</label>
+          <br>
+          <input id="scissors" type="radio" name="player_move" value="Scissors">
+          <label for="scissors">Scissors</label>
+          <br>
+          <br>
+      </div>
+    </div>
+    <button type="submit">Submit</button>
     </form>
   </body>
 </html>
