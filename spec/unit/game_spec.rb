@@ -18,22 +18,4 @@ describe Game do
     end
   end
 
-  describe '#player_choice' do
-    it 'should return either rock, paper, or scissors' do
-      allow(player_one_dbl).to receive(:choice).and_return("Rock")
-      allow(player_one_dbl).to receive(:choice).and_return("Paper")
-      allow(player_one_dbl).to receive(:choice).and_return("Scissors")
-      expect(game.player_choice).to eq("Rock").or eq("Paper").or eq("Scissors")
-    end
-  end
-
-  describe '#computer_choice' do
-    it 'should return either rock, paper, or scissors' do
-      allow(computer_player_dbl).to receive(:move).and_return("Rock")
-      allow(computer_player_dbl).to receive(:move).and_return("Paper")
-      allow(computer_player_dbl).to receive(:move).and_return("Scissors")
-      expect(game.computer_choice).to eq("Rock").or eq("Paper").or eq("Scissors")
-    end
-  end
-
 end
