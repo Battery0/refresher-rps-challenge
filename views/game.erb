@@ -4,16 +4,16 @@
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <h3>You selected '<%= @player_one.choice %>'!</h3>
+    <h3>You selected '<%= @game.player1.choice %>'!</h3>
     <div id="computer_choice">
-      <h3>The Computer picked <%= @computer.choice %></h3>
+      <h3>The Computer picked <%= @game.computer.choice %></h3>
     </div>
     <br>
     <br>
     <div id="game-result">
-      <% if @result == "win" %>
+      <% if @game.result == "win" %>
         <h2>Congratulations, you win!!</h2>
-      <% elsif @result == "draw" %>
+      <% elsif @game.result == "draw" %>
         <h2>It's a draw! Maybe next time...</h2>
       <% else %>
         <h2>You lose</h2>

@@ -21,7 +21,7 @@ class RockPaperScissors < Sinatra::Base
   end
 
   get '/rock-paper-scissors' do
-    @player_one = session[:game].player1
+    @game = session[:game]
     erb(:rock_paper_scissors)
   end
 
@@ -32,9 +32,7 @@ class RockPaperScissors < Sinatra::Base
   end
 
   get '/result' do
-    @computer = session[:game].computer
-    @player_one = session[:game].player1
-    @result = session[:game].result
+    @game = session[:game]
     erb(:game)
   end
 
