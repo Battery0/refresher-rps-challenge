@@ -27,6 +27,7 @@ class RockPaperScissors < Sinatra::Base
 
   post '/player_move' do
     session[:game].player1.choose(params[:player_move])
+    session[:game].computer.move
     redirect to('/result')
   end
 
