@@ -4,6 +4,10 @@ class Game
     @player_one = player_one
   end
 
+  def player1
+    @player_one
+  end
+
   def player_choice
     @player_one.choice
   end
