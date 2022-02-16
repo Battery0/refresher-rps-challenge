@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require_relative './lib/player'
+require_relative './lib/computer'
 
 class RockPaperScissors < Sinatra::Base
   configure :development do
@@ -29,6 +30,7 @@ class RockPaperScissors < Sinatra::Base
   end
 
   get '/result' do
+    @computer = Computer.new
     @player_one = session[:player_one]
     erb(:game)
   end
