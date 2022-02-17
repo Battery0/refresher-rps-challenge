@@ -33,11 +33,3 @@ class Game
   end
 
 end
-
-
-# game = Game.new(Player.new("p1"), Computer.new)
-# game.player1.choose("Scissors")
-# p game.player1.choice
-# p game.computer.move
-# p game.computer.choice
-# p game.result
