@@ -2,6 +2,7 @@ body {
   background-color:rgb(118, 185, 202);
   font-family: Verdana;
   text-align: center;
+  
 }
 
 #container {
@@ -15,4 +16,16 @@ body {
 
 #submit-btn {
   text-align: center;
+}
+
+#win {
+  color: green;
+}
+
+#draw {
+  color: rgb(255, 194, 64);
+}
+
+#lose {
+  color: rgba(219, 32, 32, 0.952);
 }

@@ -13,11 +13,11 @@
     <br>
     <div id="game-result">
       <% if @game.result == "win" %>
-        <h2>Congratulations, you win!!</h2>
+        <h2 id="win">Congratulations, you win!!</h2>
       <% elsif @game.result == "draw" %>
-        <h2>It's a draw! Maybe next time...</h2>
+        <h2 id="draw">It's a draw! Maybe next time...</h2>
       <% else %>
-        <h2>You lose</h2>
+        <h2 id="lose">You lose</h2>
       <% end %>
     </div>
     <br>
