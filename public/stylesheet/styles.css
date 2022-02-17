@@ -12,3 +12,7 @@ body {
 #form {
   text-align: left;
 }
+
+#submit-btn {
+  text-align: center;
+}
