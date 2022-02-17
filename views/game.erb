@@ -5,9 +5,9 @@
     <link rel="stylesheet" href="./stylesheet/styles.css">
   </head>
   <body>
-    <h3>You selected '<%= @game.player1.choice %>'!</h3>
+    <h3><%= @game.player1.name %>, you selected '<%= @game.player1.choice %>'!</h3>
     <div id="computer_choice">
-      <h3>The Computer picked <%= @game.computer.choice %></h3>
+      <h3>The Computer picked '<%= @game.computer.choice %>'</h3>
     </div>
     <br>
     <br>

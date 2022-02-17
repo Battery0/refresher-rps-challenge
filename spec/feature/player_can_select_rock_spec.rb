@@ -5,7 +5,7 @@ feature 'select a move' do
     display_player_moves
     choose('Rock')
     click_button('Submit')
-    expect(page).to have_content('You selected \'Rock\'!')
+    expect(page).to have_content('Ozzy, you selected \'Rock\'!')
   end
 
   scenario 'choose paper and get a confirmation message' do
@@ -13,7 +13,7 @@ feature 'select a move' do
     display_player_moves
     choose('Paper')
     click_button('Submit')
-    expect(page).to have_content('You selected \'Paper\'!')
+    expect(page).to have_content('Ozzy, you selected \'Paper\'!')
   end
 
   scenario 'choose scissors and get a confirmation message' do
@@ -21,7 +21,7 @@ feature 'select a move' do
     display_player_moves
     choose('Scissors')
     click_button('Submit')
-    expect(page).to have_content('You selected \'Scissors\'!')
+    expect(page).to have_content('Ozzy, you selected \'Scissors\'!')
   end
 
 end
